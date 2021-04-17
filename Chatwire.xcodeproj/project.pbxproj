@@ -52,6 +52,10 @@
 		DAB580CC262B0AD900180096 /* Chatwire */ = {
 			isa = PBXGroup;
 			children = (
+				DAB580E0262B0B2900180096 /* Utilities */,
+				DAB580DF262B0B2000180096 /* ViewModel */,
+				DAB580DE262B0B1A00180096 /* Model */,
+				DAB580DD262B0B1400180096 /* View */,
 				DAB580CD262B0AD900180096 /* ChatwireApp.swift */,
 				DAB580CF262B0AD900180096 /* ContentView.swift */,
 				DAB580D1262B0ADD00180096 /* Assets.xcassets */,
@@ -67,6 +71,34 @@
 				DAB580D4262B0ADD00180096 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAB580DD262B0B1400180096 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DAB580DE262B0B1A00180096 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DAB580DF262B0B2000180096 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DAB580E0262B0B2900180096 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
