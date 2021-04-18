@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA29EBA1262BF49700520207 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29EBA0262BF49700520207 /* Constants.swift */; };
+		DA29EBA4262C0A0F00520207 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29EBA3262C0A0F00520207 /* LoginTextField.swift */; };
+		DA29EBA7262C1E3D00520207 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29EBA6262C1E3D00520207 /* ImagePicker.swift */; };
 		DAB580CE262B0AD900180096 /* ChatwireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB580CD262B0AD900180096 /* ChatwireApp.swift */; };
 		DAB580D0262B0AD900180096 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB580CF262B0AD900180096 /* ContentView.swift */; };
 		DAB580D2262B0ADD00180096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB580D1262B0ADD00180096 /* Assets.xcassets */; };
 		DAB580D5262B0ADD00180096 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB580D4262B0ADD00180096 /* Preview Assets.xcassets */; };
+		DAB580E3262B0FF400180096 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB580E2262B0FF400180096 /* SignupView.swift */; };
+		DAB580E6262B12E500180096 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB580E5262B12E500180096 /* LoginView.swift */; };
+		DAB580EA262B137000180096 /* BubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB580E9262B137000180096 /* BubbleShape.swift */; };
+		DAB580EE262B199C00180096 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB580ED262B199C00180096 /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA29EBA0262BF49700520207 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DA29EBA3262C0A0F00520207 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		DA29EBA6262C1E3D00520207 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DAB580CA262B0AD900180096 /* Chatwire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatwire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB580CD262B0AD900180096 /* ChatwireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatwireApp.swift; sourceTree = "<group>"; };
 		DAB580CF262B0AD900180096 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAB580D1262B0ADD00180096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB580D4262B0ADD00180096 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAB580D6262B0ADD00180096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB580E2262B0FF400180096 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		DAB580E5262B12E500180096 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DAB580E9262B137000180096 /* BubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShape.swift; sourceTree = "<group>"; };
+		DAB580ED262B199C00180096 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,9 @@
 		DAB580DD262B0B1400180096 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DAB580E2262B0FF400180096 /* SignupView.swift */,
+				DAB580E5262B12E500180096 /* LoginView.swift */,
+				DAB580E9262B137000180096 /* BubbleShape.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,8 +114,20 @@
 		DAB580E0262B0B2900180096 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				DAB580EC262B197600180096 /* Custom Views */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DAB580EC262B197600180096 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAB580ED262B199C00180096 /* BlurView.swift */,
+				DA29EBA0262BF49700520207 /* Constants.swift */,
+				DA29EBA3262C0A0F00520207 /* LoginTextField.swift */,
+				DA29EBA6262C1E3D00520207 /* ImagePicker.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB580EA262B137000180096 /* BubbleShape.swift in Sources */,
+				DA29EBA4262C0A0F00520207 /* LoginTextField.swift in Sources */,
+				DAB580E3262B0FF400180096 /* SignupView.swift in Sources */,
+				DA29EBA7262C1E3D00520207 /* ImagePicker.swift in Sources */,
 				DAB580D0262B0AD900180096 /* ContentView.swift in Sources */,
+				DAB580E6262B12E500180096 /* LoginView.swift in Sources */,
+				DA29EBA1262BF49700520207 /* Constants.swift in Sources */,
 				DAB580CE262B0AD900180096 /* ChatwireApp.swift in Sources */,
+				DAB580EE262B199C00180096 /* BlurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
