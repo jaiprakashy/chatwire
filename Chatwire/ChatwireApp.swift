@@ -11,7 +11,7 @@ import SwiftUI
 struct ChatwireApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ContentView().environmentObject(AuthViewModel.shared)
         }
     }
 }

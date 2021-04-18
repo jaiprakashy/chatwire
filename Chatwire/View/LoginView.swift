@@ -17,19 +17,22 @@ struct LoginView: View {
     @State var image: Image?
     @State var isFocused = false
     
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.3176470588, green: 0.768627451, blue: 0.8274509804, alpha: 1))
+            LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.2196078431, green: 0.9058823529, blue: 0.9921568627, alpha: 1)), Color(#colorLiteral(red: 0.1725490196, green: 0.7254901961, blue: 0.6901960784, alpha: 1))]), startPoint: .topLeading, endPoint: .topTrailing)
             VStack {
                 Spacer()
                 if !isLoginState {
                     Text("Sign Up")
                         .foregroundColor(.white)
                         .font(.system(size: 50))
+                        .bold()
                 }
                 VStack {
                     if !isLoginState {
@@ -50,7 +53,7 @@ struct LoginView: View {
                                         .resizable()
                                         .renderingMode(.template)
                                         .scaledToFill()
-                                        .foregroundColor(Color(#colorLiteral(red: 0.07058823529, green: 0.431372549, blue: 0.5098039216, alpha: 1)))
+                                        .foregroundColor(Color(#colorLiteral(red: 0.1725490196, green: 0.7254901961, blue: 0.6901960784, alpha: 1)))
                                         .frame(width: 140, height: 140)
                                         .padding(.vertical, 20)
                                 }
@@ -63,7 +66,9 @@ struct LoginView: View {
                     
                     if isLoginState {
                         Text("Login")
+                            .foregroundColor(Color(#colorLiteral(red: 0.1725490196, green: 0.7254901961, blue: 0.6901960784, alpha: 1)))
                             .font(.system(size: 50))
+                            .bold()
                             .padding(30)
                     }
                     VStack(spacing: 20) {
@@ -77,6 +82,7 @@ struct LoginView: View {
                         .padding(.horizontal, 20)
                         
                         Button(action: {
+                            viewModel.isAuthenticated = true
                             print("Login Pressed")
                         }) {
                             Spacer()
@@ -86,9 +92,9 @@ struct LoginView: View {
                             Spacer()
                         }
                         .padding(20)
-                        .background(Color(#colorLiteral(red: 0.07058823529, green: 0.431372549, blue: 0.5098039216, alpha: 1)))
+                        .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.2196078431, green: 0.9058823529, blue: 0.9921568627, alpha: 1)), Color(#colorLiteral(red: 0.1725490196, green: 0.7254901961, blue: 0.6901960784, alpha: 1))]), startPoint: .top, endPoint: .bottom))
                         .clipShape(BubbleShape(cornerRadius: 20, bubbleType: .login))
-                        .shadow(color: Color(#colorLiteral(red: 0.07058823529, green: 0.431372549, blue: 0.5098039216, alpha: 1)).opacity(0.3), radius: 20, x: 0, y: 20)
+                        .shadow(color: Color(#colorLiteral(red: 0.1725490196, green: 0.7254901961, blue: 0.6901960784, alpha: 1)).opacity(0.3), radius: 20, x: 0, y: 20)
                         .padding(.horizontal, 30)
                     }
                     
@@ -102,7 +108,7 @@ struct LoginView: View {
                             Text(isLoginState ? "Sign Up" : "Sign In")
                                 .bold()
                         }
-                        .foregroundColor(Color(#colorLiteral(red: 0.07058823529, green: 0.431372549, blue: 0.5098039216, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.1725490196, green: 0.7254901961, blue: 0.6901960784, alpha: 1)))
                         .padding(20)
                         .padding(.bottom, 20)
                     })

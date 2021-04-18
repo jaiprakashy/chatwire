@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
-        NavigationView {
-            LoginView()
+        Group {
+            if viewModel.isAuthenticated {
+//                NavigationView {
+                    MainTabView()
+//                }
+            } else {
+                LoginView()
+            }
         }
     }
 }
