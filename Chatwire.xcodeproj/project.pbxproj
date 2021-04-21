@@ -21,6 +21,8 @@
 		DA949618262FDA94008F40FD /* GroupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA949617262FDA94008F40FD /* GroupItem.swift */; };
 		DA94961B262FDEC0008F40FD /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA94961A262FDEC0008F40FD /* GroupView.swift */; };
 		DA94961E262FE22A008F40FD /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA94961D262FE22A008F40FD /* MessageView.swift */; };
+		DA949621262FE396008F40FD /* CallRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA949620262FE396008F40FD /* CallRow.swift */; };
+		DA949624262FE52A008F40FD /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA949623262FE52A008F40FD /* CallsView.swift */; };
 		DAB580CE262B0AD900180096 /* ChatwireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB580CD262B0AD900180096 /* ChatwireApp.swift */; };
 		DAB580D0262B0AD900180096 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB580CF262B0AD900180096 /* ContentView.swift */; };
 		DAB580D2262B0ADD00180096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB580D1262B0ADD00180096 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		DA949617262FDA94008F40FD /* GroupItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupItem.swift; sourceTree = "<group>"; };
 		DA94961A262FDEC0008F40FD /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 		DA94961D262FE22A008F40FD /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		DA949620262FE396008F40FD /* CallRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRow.swift; sourceTree = "<group>"; };
+		DA949623262FE52A008F40FD /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
 		DAB580CA262B0AD900180096 /* Chatwire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatwire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB580CD262B0AD900180096 /* ChatwireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatwireApp.swift; sourceTree = "<group>"; };
 		DAB580CF262B0AD900180096 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				DA949617262FDA94008F40FD /* GroupItem.swift */,
 				DA94961A262FDEC0008F40FD /* GroupView.swift */,
 				DA94961D262FE22A008F40FD /* MessageView.swift */,
+				DA949620262FE396008F40FD /* CallRow.swift */,
+				DA949623262FE52A008F40FD /* CallsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,8 +245,10 @@
 				DA29EBB3262C612800520207 /* SegmentView.swift in Sources */,
 				DA29EBB7262C714D00520207 /* StatusCell.swift in Sources */,
 				DAB580E6262B12E500180096 /* LoginView.swift in Sources */,
+				DA949624262FE52A008F40FD /* CallsView.swift in Sources */,
 				DA29EBA1262BF49700520207 /* Constants.swift in Sources */,
 				DA94961E262FE22A008F40FD /* MessageView.swift in Sources */,
+				DA949621262FE396008F40FD /* CallRow.swift in Sources */,
 				DAB580CE262B0AD900180096 /* ChatwireApp.swift in Sources */,
 				DA29EBAD262C568A00520207 /* ChatViewHome.swift in Sources */,
 				DA29EBC0262C807400520207 /* AuthViewModel.swift in Sources */,

@@ -22,8 +22,6 @@ struct MessageView: View {
                     
                     Spacer()
                 }
-                .background(Color.white)
-                .ignoresSafeArea()
             }
         }
     }

@@ -51,8 +51,6 @@ struct MessageRow: View {
                         Spacer()
                     }
                     .padding(.bottom, 10)
-                    
-                    Divider()
                 }
                 
                 Spacer()

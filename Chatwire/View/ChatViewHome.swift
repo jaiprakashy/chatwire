@@ -42,7 +42,7 @@ struct ChatViewHome: View {
                 case .group:
                     GroupView()
                 case .calls:
-                    MessageView()
+                    CallsView()
                 }
             }
         }
