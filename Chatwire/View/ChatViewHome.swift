@@ -36,19 +36,13 @@ struct ChatViewHome: View {
                 SegmentView(selectedOption: $selectedOption)
                     .padding(.bottom, -8)
                 
-                ScrollView(showsIndicators: false) {
-                    VStack {
-                        StatusView()
-                        
-                        ForEach(0 ..< 10) { _ in
-                            MessageRow()
-                                .padding(.leading)
-                        }
-                        
-                        Spacer()
-                    }
-                    .background(Color.white)
-                    .ignoresSafeArea()
+                switch selectedOption {
+                case .message:
+                    MessageView()
+                case .group:
+                    GroupView()
+                case .calls:
+                    MessageView()
                 }
             }
         }
